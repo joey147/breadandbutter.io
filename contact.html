@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet"
+		  type="text/css"
+		  href="no.css"
+	      />
+
+	</head>	
+	<body>
+		<a 
+		href="index.html">
+		My Project Work
+		</a>
+		 &nbsp;
+		<a 
+		href="introduction.html">
+		Introduction
+		</a>
+		&nbsp;
+		<a 
+		href="contact.html">
+			Contact me 
+		</a>
+
+		<hr></hr>
+
+		<h1 style = "color:rgb(177, 8, 177)">
+		Contact details
+		</h1>
+			  
+			<p id = "GFG_UP" style =
+				"font-size: 16px; font-weight: bold;">     
+			</p>
+			  
+			<button onclick = "gfg_Run()"> 
+				Click here
+			</button>
+			  
+			<p id = "GFG_DOWN" style =
+				"color:rgb(179,179,215); font-size: 20px; font-weight: bold;">
+			</p>
+			  
+		If you find my profile interesting, please contact me via the following:
+		<ul>
+			<li>Email me @ joeychan149@gmail.com</li>
+			<li>Message me @ linkedin.com/in/joeychan149/</li>
+			<li>Contact me @ facebook.com/joeychan149</li>
+			<li>Reach me @ Instagram.com/jolly149/</li>
+		</ul>
+		<button id="myButton 1" class="float-left submit-button" >Behance Portfolio</button>
+        <button id="myButton 2" class="float-left submit-button" >Medium Blog</button>
+		     
+<script type="text/javascript">
+   document.getElementById("myButton 1").onclick = function () {
+		window.open('https://www.behance.net/joeychan8'); //new window
+    };
+	document.getElementById("myButton 2").onclick = function () {
+		window.open('https://joeychan149.medium.com'); //new window
+    };
+	document.getElementById("myButton 1").style.backgroundColor = "lightblue";
+	
+	var el_up = document.getElementById("GFG_UP");
+		var el_down = document.getElementById("GFG_DOWN");
+		var str = "Click on button to change the background color";
+	  
+		el_up.innerHTML = str;
+	  
+		function changeColor(color) {
+			document.body.style.background = color;
+		}
+		  
+		function gfg_Run() {
+			changeColor('rgb(179,179,215)');
+			el_down.innerHTML = "Background Color changed";
+		}    
+
+		
+</script>
+
+	</body>
+</html>
+
+
+
+
